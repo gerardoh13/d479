@@ -1,0 +1,56 @@
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4efe3 !important;
+}
+
+.sand {
+  background-color: #f4efe3 !important;
+}
+
+@media (min-width: 992px) {
+  .custom-max-height {
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .custom-max-height {
+    max-height: auto;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.card-img-overlay {
+  z-index: 2;
+}
+
+.card-img,
+.col-md-6 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.col-md-4 img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; 
+  object-position: center;
+}
+
+.active {
+  color: white !important;
+}
